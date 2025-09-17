@@ -1,61 +1,35 @@
-# 🧹 Real Estate Data Cleaning with MySQL
+# Real Estate Data Cleaning with MySQL
+**Comprehensive data quality improvement pipeline for Nashville housing dataset**
 
-This project focuses on enhancing data quality by cleaning, structuring, and standardizing a real estate dataset using MySQL.
+## 🎯 Project Overview
+Systematic data cleaning operations on real estate dataset using MySQL to demonstrate SQL data preprocessing skills and improve data quality for downstream analysis.
 
----
+## 🔧 Data Quality Issues Addressed
+- **Date Standardization:** Converted inconsistent date formats to uniform YYYY-MM-DD structure
+- **Address Normalization:** Filled missing property addresses using available records
+- **Address Parsing:** Split combined address strings into structured components (Address, City)  
+- **Owner Information:** Separated owner addresses into Address, City, State columns
+- **Categorical Cleanup:** Standardized 'Y'/'N' values to 'Yes'/'No' in Sold As Vacant field
+- **Duplicate Removal:** Identified and eliminated duplicate records
+- **Schema Optimization:** Removed unused columns for cleaner dataset structure
 
-## 📌 Key Objectives
+## 📊 Dataset Details
+- **Source:** Nashville Housing dataset
+- **Records:** Multiple property transactions with ownership details
+- **Cleaning Operations:** 6 major data quality improvements implemented
 
-- Import raw dataset into MySQL
-- Perform thorough data cleaning operations
-- Ensure improved structure and data quality
+## 🛠️ Technical Implementation
+**Database:** MySQL  
+**Language:** SQL with DDL/DML operations  
+**Techniques:** String manipulation, joins, conditional updates, duplicate detection
 
----
+## 📁 Repository Contents
+- `Nashville Housing Data for Data Cleaning.csv` - Original dataset
+- `Nashville Housing Data for Data Cleaning_SQL.sql` - Complete SQL cleaning script
+- `README.md` - Project documentation
 
-## 🔧 Cleaning Operations Performed
-
-### ✅ 1. Standardized Date Format
-- Converted inconsistent date entries into a uniform format.
-
-### ✅ 2. Address Standardization
-- Filled missing property addresses.
-- Split address into structured columns: `Address`, `City`.
-
-### ✅ 3. Owner Address Enhancement
-- Separated owner address into: `Address`, `City`, `State`.
-
-### ✅ 4. Categorical Value Cleanup
-- Replaced `'Y'`/`'N'` with `'Yes'`/`'No'` in the `Sold As Vacant` column.
-
-### ✅ 5. Data Deduplication
-- Removed duplicate records to ensure dataset accuracy.
-
-### ✅ 6. Column Optimization
-- Dropped irrelevant or unused columns to streamline analysis.
-
----
-
-## 🛠️ Tools & Technologies
-
-| Tool        | Purpose                       |
-|-------------|-------------------------------|
-| MySQL       | Data storage and transformation |
-| SQL Queries | Data cleaning operations      |
-| CSV         | Initial data source format    |
-
----
-
----
-
-## 🧠 Learning Outcomes
-
-- Working with real-world messy data
-- Applying SQL transformations to improve data quality
-- Building a clean database structure for downstream analysis
-
----
-
-
-## 📝 License
-
-This repository is intended for academic and learning purposes. Not for commercial reuse.
+## 🎓 Learning Outcomes
+- Hands-on experience with real-world messy data
+- SQL data transformation and quality improvement techniques
+- Database schema design and optimization
+- Systematic approach to data preprocessing challenges
